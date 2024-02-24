@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Protest+Guerrilla&display=swap');
+
+.home {
+    background-image: url("../../../assets/images/home.png.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-button {
+    /* Button styles */
+    /* bottom: 20px; Adjust the distance from the bottom as needed */
+    background-color:rgba(0, 0, 0);
+    color: aliceblue;
+    height: 70px;
+    width: 130px ;
+    border: none;
+    font-size: 30px;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    border-radius: 20px;
+    font-style: normal;
+}
+
+.explore-button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    color:rgb(0, 0, 0);
+    border: 2px solid;
+    border-radius: 20px ;
+}
+ 
+
+.home>h1{
+    font-size: 50px;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;/* Ensures the content is not revealed until the animation */
+    /* border-right: .17em solid pink;The typewriter cursor */
+    white-space: nowrap;/* Keeps the content on a single line */
+    margin: 0 auto;/* Gives that scrolling effect as the typing happens */
+    /* letter-spacing: .1em; */
+    animation: typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
+}
+@keyframes typing {
+    from {
+      width: 0
+    }
+    to {
+      width: 100%
+    }
+  }
+  /* The typewriter cursor effect */
+  @keyframes blinking-cursor {
+    from,
+    to {
+      border-color: transparent
+    }
+    50% {
+      border-color: pink;
+    }
+  }

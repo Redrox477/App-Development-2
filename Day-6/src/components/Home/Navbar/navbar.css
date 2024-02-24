@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Caveat:wght@400..700&family=Protest+Guerrilla&display=swap');
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+.logo {
+    height: 55.67px;
+    width: 55.72px;
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.navlinks {
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo > p {
+    font-size: 30px;
+    margin: 0;
+    color: white;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav4 {
+    background-color: wheat;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-logo {
+        margin-bottom: 10px;
+    }
+
+    .navlinks {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

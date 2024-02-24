@@ -1,0 +1,26 @@
+/* Styles for Google Payment button */
+.google-payment-button {
+    background-color: #4285f4; /* Google blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .google-payment-button:hover {
+    background-color: #357ae8; /* Darker Google blue on hover */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 576px) {
+    .google-payment-button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  
