@@ -1,0 +1,98 @@
+/* Styles for the gift grid */
+.gift-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Styles for individual gift items */
+  .gift-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Hover effect for gift items */
+  .gift-item:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Styles for gift item image */
+  .gift-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  /* Styles for gift item name */
+  .gift-item h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for gift item description */
+  .gift-item p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for gift item price */
+  .gift-item span {
+    display: block;
+    color: #f00;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for add to cart button */
+  .gift-item button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .gift-item button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .gift-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .gift-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+    }
+  
+    .gift-item {
+      padding: 15px;
+    }
+  
+    .gift-item h3 {
+      font-size: 18px;
+    }
+  
+    .gift-item p {
+      font-size: 14px;
+    }
+  
+    .gift-item span {
+      font-size: 16px;
+    }
+  }
+  
