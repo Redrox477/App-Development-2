@@ -34,7 +34,7 @@ public class AdminController {
     @PreAuthorize("hasAuthority('admin:update')")
     @Hidden
     public String put() {
-        return "PUT:: admin controller";
+        return "PUT:: admin controllers";
     }
 
     @DeleteMapping
